@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: #000;
+    cursor: pointer;
+    box-shadow: 50px 50px 0 blue, -50px 50px 0 yellow, -50px -50px 0 red,50px -50px 0 green;
+    transition: all 1s;
+}
+
+div:hover {
+    box-shadow: -50px 50px 0 blue, -50px -50px 0 yellow, 50px -50px 0 red,50px 50px 0 green;
+}
+
+div:active {
+    box-shadow: -50px -50px 0 blue, 50px -50px 0 yellow, 50px 50px 0 red,-50px 50px 0 green;
+}
